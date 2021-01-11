@@ -1,0 +1,88 @@
+﻿@model OfcPim.Models.EBRX_CLIENT_SOLICIT
+
+@{
+    ViewBag.Title = "SolicitaAtendmnt";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<link href="~/Content/css/SolictPage/SolictServi.css" rel="stylesheet" />
+
+@if (TempData["SolictCriada"] != null)
+{
+    <div style="border:1px solid green">
+        @TempData["SolictCriada"]
+    </div>
+}
+
+
+    <div class="titulo_page">
+        <h1>Serviços</h1>
+        <h2>Escolha os serviços disponiveis!</h2>
+    </div>  
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <h1 class="title has-text-centered">PREENCHA COM AS INFORMAÇÕES</h1>
+                        <div class="form-horizontal">
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.EBRX_CLIENTE_CPF, "Digite o seu CPF ", htmlAttributes: new { @class = "label" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.EBRX_CLIENTE_CPF, new { @class = "input" })
+                                    @Html.ValidationMessageFor(model => model.EBRX_CLIENTE_CPF, "", new { @class = "input" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TIP_STR_SOL, "No que podemos ajudar?", htmlAttributes: new { @class = "label" })
+                                <div class="col-md-10">
+
+                                    @Html.DropDownListFor(e => e.TIP_STR_SOL, ViewBag.TipoSolicitacao as IEnumerable<SelectListItem>, "Selecione")
+                                    @Html.ValidationMessageFor(model => model.TIP_STR_SOL, "", new { @class = "input" })
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.DESC_STR_SOL, "Digite o Motivo da sua solicitação", htmlAttributes: new { @class = "label" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.DESC_STR_SOL, new { htmlAttributes = new { @class = "textarea" } })
+                                    @Html.ValidationMessageFor(model => model.DESC_STR_SOL, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Enviar pedido" class="button is-link is-medium" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+@section ScriptPage{
+    @Scripts.Render("~/bundles/jqueryval")
+
+}
+

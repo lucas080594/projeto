@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap');
+
+
+.informacoes-conta{
+
+	display: 	flex;
+	justify-content: start;
+
+
+	margin-top: 5px;
+  margin-left: 70px;
+  margin-right: 70px;
+
+	width: calc(100% - 70px);
+}
+
+
+.click_collapse .informacoes-conta{
+	width: calc(100% - 250px);
+	margin-left: 50px;
+	transition: all 0.2s ease;
+}
+
+.click_collapse .titulo_page{
+	width: calc(100% - 250px);
+  margin-left: 350px;
+	transition: all 0.2s ease;
+}
+
+.account-box{
+
+  width:350px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(250, 146, 146, 0.1);
+  position: relative;
+  
+  }
+
+.user-information{
+  display: block;
+  
+  width:1200px;
+  height: 400px;
+  margin: 20px;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(250, 146, 146, 0.1);
+  position: relative;
+}
+
+.titulo-carteira{
+
+  text-align: center;
+
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+} 
+.titulo-carteira h1{
+  background: #fff;
+  color: #DC143C;
+}
+
+
+
+.informacoes-carteira-estrutura{
+  font-family: 'Baloo Paaji 2', cursive;
+color:#FFFFFF;
+background-color: b;
+
+padding: 10px 10px;
+position: relative;
+
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 18px;
+border-radius: 0px 0px 10px 10px;
+box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.title-acc{
+  font-size: 13px;
+    font-weight: 700;
+    text-align: left!important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .2px;
+}
+
+
+.informações-cadastrais{
+	margin-top: 60px;
+	margin-left: 70px;
+	padding: 5px;
+	width: calc(100% - 70px);
+}
+
+.click_collapse .user-information{
+	width: calc(100% - 250px);
+	margin-left: 350px;
+	transition: all 0.2s ease;
+}
+
+
+
+.valores-moedas{
+
+  display: flex;
+  justify-content: space-between;
+
+  color:#DC143C;
+  background-color: #ffffff;
+  
+
+  padding: 0px 15px;
+  position: relative;
+
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
+
+}
+.valores-moedas dt{
+  font-family: 'Baloo Paaji 2', cursive;
+  border: #fff 2px solid;
+
+  position: relative;
+  
+  margin: 0px 10px 10px;
+  
+  height: 50px;
+  width: 900px;
+  border-radius: 90px;
+  
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.saldo-bit-eht{
+  display: flex;
+  justify-content: space-between;
+
+
+  color:#DC143C;
+  background-color: #ffffff;
+
+  padding: 10px 15px;
+  position: relative;
+
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
+}
+.saldo-bit-eht dt{
+  font-family: 'Baloo Paaji 2', cursive;
+  border: #fff 2px solid;
+
+  margin-top: 10px;
+  
+  height: 50px;
+  width: 900px;
+  border-radius: 90px;
+  
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+
+}

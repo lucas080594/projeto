@@ -1,0 +1,51 @@
+body
+{
+ margin: 0;
+ padding: 0;
+ background-position: center;
+background-size: cover;
+font-family: "Red", sans-serif;
+margin-top: 40px;
+}
+
+.section
+{
+	width: 700px;
+	background-color: red;
+	max-width: 500px;
+	margin: auto;
+	color: #ffffff;
+	padding: 0px 0px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: inset 100 100 1en gold, 0 0 1en red;
+}
+
+.h1{
+	color: #333;
+}
+
+.input, textarea {
+	width: 470px;
+	padding: 10px;
+	border: 0px solid #000;
+}
+
+.enviar, button{
+	height: 40px;
+	width: 90px;
+	border-radius: 2px;
+    border: 0px solid #000;
+    cursor: pointer;
+ }
+
+ .enviar, button:hover {
+ cursor: pointer;
+ background: #333;
+ transition: 0.2s;
+ }
+
+.textarea{
+	width: 470px;
+	height: 120px;
+	line-height: 20px;
+}

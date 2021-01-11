@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BDPIMModelStoreContainer" CdmEntityContainer="BancoContaEntities">
+    <EntitySetMapping Name="EBRX_BANCO_CONTA">
+      <EntityTypeMapping TypeName="BDPIMModel.EBRX_BANCO_CONTA">
+        <MappingFragment StoreEntitySet="EBRX_BANCO_CONTA">
+          <ScalarProperty Name="COD_INT_CONTA_ID" ColumnName="COD_INT_CONTA_ID" />
+          <ScalarProperty Name="EBRX_CLIENTE_CLI_COD" ColumnName="EBRX_CLIENTE_CLI_COD" />
+          <ScalarProperty Name="INSTI_BANCO_COD" ColumnName="INSTI_BANCO_COD" />
+          <ScalarProperty Name="CONT_STR_BANCO" ColumnName="CONT_STR_BANCO" />
+          <ScalarProperty Name="DIGT_STR_BANCO" ColumnName="DIGT_STR_BANCO" />
+          <ScalarProperty Name="AGENC_NUMERO" ColumnName="AGENC_NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INSTI_BANCO">
+      <EntityTypeMapping TypeName="BDPIMModel.INSTI_BANCO">
+        <MappingFragment StoreEntitySet="INSTI_BANCO">
+          <ScalarProperty Name="BANCO_INT_ID" ColumnName="BANCO_INT_ID" />
+          <ScalarProperty Name="NOME_STR_BANK" ColumnName="NOME_STR_BANK" />
+          <ScalarProperty Name="CNPJ_STR_BANK" ColumnName="CNPJ_STR_BANK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EBRX_CLIENTE">
+      <EntityTypeMapping TypeName="BDPIMModel.EBRX_CLIENTE">
+        <MappingFragment StoreEntitySet="EBRX_CLIENTE">
+          <ScalarProperty Name="SENH_ACC" ColumnName="SENH_ACC" />
+          <ScalarProperty Name="DAT_ATUALIZC" ColumnName="DAT_ATUALIZC" />
+          <ScalarProperty Name="STATS_STR_CLI" ColumnName="STATS_STR_CLI" />
+          <ScalarProperty Name="DAT_INCLS_CLI" ColumnName="DAT_INCLS_CLI" />
+          <ScalarProperty Name="EMAIL_STR_CLI" ColumnName="EMAIL_STR_CLI" />
+          <ScalarProperty Name="DT_NASC_CLI" ColumnName="DT_NASC_CLI" />
+          <ScalarProperty Name="CPF_STR_CLI" ColumnName="CPF_STR_CLI" />
+          <ScalarProperty Name="NOME_STR_CLI" ColumnName="NOME_STR_CLI" />
+          <ScalarProperty Name="CLI_INT_ID" ColumnName="CLI_INT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

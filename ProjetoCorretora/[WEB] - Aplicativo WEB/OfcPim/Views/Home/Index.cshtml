@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHeaderFooter.cshtml";
+}
+
+<section id="main">
+    <nav>
+        <!--logo--->
+        <a href="#" class="logo">EBRAX - Exchange</a>
+        <!--menu--------->
+        <div class="toggle"></div>
+        <ul class="menu">
+            <li class=""><a href="#main">Inicio</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#services">Nossa Tecnologia</a></li>
+
+        </ul>
+        <ul><li class="btnLogin"><a href="Login">Acessar</a></li></ul>
+    </nav>
+    <!--name--------------------------->
+    <div class="name">
+        <!--name--->
+        <h1>INVISTA PARA CONQUISTAR SEUS SONHOS.</h1>
+        <!--details--------------->
+        <p class="details">Somos uma exchange que desenvolve soluções simples, seguras e 100% digitais para sua vida financeira. A técnologia Blockchain chegou para sua segurança e nós para facilitar.</p>
+        <!--cv button-------------------->
+        <a href="Registro" class="cv-btn">Abra sua Conta</a>
+
+    </div>
+    <!--Setinhas-------------->
+    <div class="black-line"></div>
+    <!--Icones de redes sociais, bem sutil---------------->
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+</section>
+<!--SObre a EBRAX ( QUEM QUISER COLOCAR UM TEXTO MELHOR SERÁ BEM VINDO ;-; ----------------------->
+<section id="about">
+    <!--text---------------------->
+    <div class="about-text">
+
+        <!--TITULO ---------------------->
+        <h1>Tech Insight!</h1>
+        <!--SUB-TITULO---------------------->
+        <h2>A tecnologia move o mundo</h2>
+        <!--TEXTO---------------------->
+        <p>
+            Os criptoativos são ativos virtuais, protegidos por criptografia, presentes exclusivamente em registros digitais, cujas operações são executadas e armazenadas em uma rede de computadores.
+            Esses ativos surgiram com a intenção de permitir que indivíduos ou empresas efetuem pagamentos ou transferências fi nanceiras eletrônicas diretamente a outros indivíduos ou empresas, sem a necessidade da intermediação de uma instituição fi nanceira. Tal propósito serviria - inclusive - para pagamentos ou transferências internacionais.
+        </p>
+
+        <button   class="cv-btn"><a href="Registro">ABRA SUA CONTA</a></button>
+
+    </div>
+    <!--FOTINHA ----------------->
+    <div class="about-model">
+        <img src="/images/backzin.png" width="529" height="587" />
+    </div>
+
+</section> 	<!--BITCOIN - ETHERUM - BLOCKCHAIN -------------------->
+
+<section id="services">
+    <!--Para chamar o ID no CSS Conteudo3.css -------------------->
+
+    <div class="s-heading">
+        <h1>TÉCNOLOGIAS</h1>
+        <p>Leve seus investimentos e contratos para onde quiser!</p>
+    </div>
+
+    <!--Caixa explicativa #1--------->
+    <div class="b-container">
+
+        <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">O Bitcoin</div> <!--TITULO ---------------------->
+                <img src="~/images/bitin.jpg"> <!--IMAGEM ---------------------->
+            </div>
+            <div class="s-b-text">
+                <!--TEXTO---------------------->
+                <a href="#">O Bitcoin é uma criptomoeda descentralizada ou um dinheiro eletrônico para transações ponto-a-ponto. Não necessita de intermediários é uma moeda que consegue operar de forma independente e descentralizada.</a>
+            </div>
+
+        </div>
+
+        <!--Caixa explicativa #2--------->
+        <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Ether</div><!--TITULO ---------------------->
+                <img src="~/images/eth_banner.jpg"><!--IMAGEM ---------------------->
+            </div>
+            <div class="s-b-text">
+                <!--TEXTO---------------------->
+                <a href="#">O Ether é uma moeda digital descentralizado, indicado pelas letras ETH. Assim como o Bitcoin, o Ether não é controlado por nenhuma organização ou governo e pode ser usado para armazenar valor, fazer pagamentos e fornecer garantias.
+            </div>
+        </div>
+
+        <!--Caixa explicativa #3--------->
+        <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Block-Chain</div><!--TITULO ---------------------->
+                <img src="~/images/blockchain_banner.jpg"><!--IMAGEM ---------------------->
+            </div>
+            <div class="s-b-text">
+                <!--TEXTO---------------------->
+                <a href="#">O blockchain, também chamado de “protocolo de confiança”, é uma tecnologia firmada a partir do conceito de descentralização como medida de segurança. Ela é tida como a principal inovação tecnológica do bitcoin.</a>
+            </div>
+        </div>
+
+        <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Smart Contracts</div><!--TITULO ---------------------->
+                <img src="~/images/contratointeligente.jpg"><!--IMAGEM ---------------------->
+            </div>
+            <div class="s-b-text">
+                <!--TEXTO---------------------->
+                <a href="#">Os smart contracts são contratos digitais autoexecutáveis que usam a tecnologia para garantir que os acordos firmados serão cumpridos. A revolução do Bitcoin e das criptomoedas trouxe várias mudanças na forma como entendemos e lidamos com o dinheiro. Além disso, essas moedas digitais também ajudaram a desenvolver uma série de tecnologias bastante revolucionárias, com várias aplicações no mundo financeiro, como é o caso dos smart contracts ou contratos inteligentes.</a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

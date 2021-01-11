@@ -1,0 +1,131 @@
+.informacoes-conta{
+
+	display: 	flex;
+	justify-content: start;
+
+
+	margin-top: 5px;
+  margin-left: 70px;
+  margin-right: 70px;
+
+	width: calc(100% - 70px);
+}
+
+
+.click_collapse .informacoes-conta{
+	width: calc(100% - 250px);
+	margin-left: 50px;
+	transition: all 0.2s ease;
+}
+
+.click_collapse .titulo_page{
+	width: calc(100% - 250px);
+  margin-left: 350px;
+	transition: all 0.2s ease;
+}
+
+.account-box{
+
+  width:350px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(250, 146, 146, 0.1);
+  position: relative;
+  
+  }
+
+.user-information{
+  width:900px;
+  height: 400px;
+  margin: 20px;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(250, 146, 146, 0.1);
+  position: relative;
+}
+
+.titulo-botao{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(250, 146, 146, 0.1);
+  position: relative;
+} .titulo-botao a{
+
+  margin-right: 9px;
+  padding: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+	color:rgb(59, 59, 59); /*Cor dos botões de LOGIN e CADASTRO*/
+  background-color: #cacaca;
+	border-radius: 5px;
+}
+
+
+
+.informacao-conta{
+  font-family: calibri;
+color:#FFFFFF;
+background-color: #DC143C;
+
+padding: 10px 10px;
+position: relative;
+
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 18px;
+border-radius: 0px 0px 10px 10px;
+box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.title-acc{
+  font-size: 13px;
+    font-weight: 700;
+    text-align: left!important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .2px;
+}
+
+
+.informações-cadastrais{
+	margin-top: 60px;
+	margin-left: 70px;
+	padding: 5px;
+	width: calc(100% - 70px);
+}
+
+.click_collapse .user-information{
+	width: calc(100% - 250px);
+	margin-left: 350px;
+	transition: all 0.2s ease;
+}
+
+
+
+.informacao-user{
+  font-family: calibri;
+
+
+color:#2c0404;
+background-color: #ffffff;
+
+padding: 10px 15px;
+position: relative;
+
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 18px;
+border-radius: 0px 0px 10px 10px;
+
+}
+

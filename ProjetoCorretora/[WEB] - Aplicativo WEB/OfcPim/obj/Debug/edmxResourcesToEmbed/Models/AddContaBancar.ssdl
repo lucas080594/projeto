@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDPIMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EBRX_BANCO_CONTA">
+    <Key>
+      <PropertyRef Name="COD_INT_CONTA_ID" />
+    </Key>
+    <Property Name="COD_INT_CONTA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_CLIENTE_CLI_COD" Type="int" />
+    <Property Name="INSTI_BANCO_COD" Type="int" />
+    <Property Name="CONT_STR_BANCO" Type="varchar" MaxLength="15" />
+    <Property Name="DIGT_STR_BANCO" Type="varchar" MaxLength="3" />
+    <Property Name="AGENC_NUMERO" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="EBRX_CLIENTE">
+    <Key>
+      <PropertyRef Name="CLI_INT_ID" />
+    </Key>
+    <Property Name="CLI_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME_STR_CLI" Type="varchar" MaxLength="50" />
+    <Property Name="CPF_STR_CLI" Type="char" MaxLength="11" />
+    <Property Name="DT_NASC_CLI" Type="date" />
+    <Property Name="EMAIL_STR_CLI" Type="varchar" MaxLength="100" />
+    <Property Name="DAT_INCLS_CLI" Type="datetime" />
+    <Property Name="STATS_STR_CLI" Type="char" MaxLength="1" />
+    <Property Name="DAT_ATUALIZC" Type="datetime" />
+    <Property Name="SENH_ACC" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="INSTI_BANCO">
+    <Key>
+      <PropertyRef Name="BANCO_INT_ID" />
+    </Key>
+    <Property Name="BANCO_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME_STR_BANK" Type="varchar" MaxLength="40" />
+    <Property Name="CNPJ_STR_BANK" Type="char" MaxLength="14" />
+  </EntityType>
+  <Association Name="FK_BANC_INST_ID">
+    <End Role="INSTI_BANCO" Type="Self.INSTI_BANCO" Multiplicity="0..1" />
+    <End Role="EBRX_BANCO_CONTA" Type="Self.EBRX_BANCO_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INSTI_BANCO">
+        <PropertyRef Name="BANCO_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_BANCO_CONTA">
+        <PropertyRef Name="INSTI_BANCO_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENT_BANC_ID">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="0..1" />
+    <End Role="EBRX_BANCO_CONTA" Type="Self.EBRX_BANCO_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_BANCO_CONTA">
+        <PropertyRef Name="EBRX_CLIENTE_CLI_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDPIMModelStoreContainer">
+    <EntitySet Name="EBRX_BANCO_CONTA" EntityType="Self.EBRX_BANCO_CONTA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_CLIENTE" EntityType="Self.EBRX_CLIENTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INSTI_BANCO" EntityType="Self.INSTI_BANCO" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BANC_INST_ID" Association="Self.FK_BANC_INST_ID">
+      <End Role="INSTI_BANCO" EntitySet="INSTI_BANCO" />
+      <End Role="EBRX_BANCO_CONTA" EntitySet="EBRX_BANCO_CONTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENT_BANC_ID" Association="Self.FK_CLIENT_BANC_ID">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_BANCO_CONTA" EntitySet="EBRX_BANCO_CONTA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SolicitacaoAtendmnt.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EBRX_CLIENT_SOLICIT">
+    <Key>
+      <PropertyRef Name="PROTOCOL_INT_ID" />
+    </Key>
+    <Property Name="PROTOCOL_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_FUNC_PROFILE_COD" Type="int" />
+    <Property Name="EBRX_CLIENTE_COD" Type="int" />
+    <Property Name="TIP_STR_SOL" Type="int" />
+    <Property Name="DESC_STR_SOL" Type="varchar" MaxLength="300" />
+    <Property Name="DT_ATUALIZCAO" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EBRX_CLIENTE">
+    <Key>
+      <PropertyRef Name="CLI_INT_ID" />
+    </Key>
+    <Property Name="CLI_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME_STR_CLI" Type="varchar" MaxLength="50" />
+    <Property Name="CPF_STR_CLI" Type="char" MaxLength="11" />
+    <Property Name="DT_NASC_CLI" Type="date" />
+    <Property Name="EMAIL_STR_CLI" Type="varchar" MaxLength="100" />
+    <Property Name="DAT_INCLS_CLI" Type="datetime" />
+    <Property Name="STATS_STR_CLI" Type="char" MaxLength="1" />
+    <Property Name="DAT_ATUALIZC" Type="datetime" />
+    <Property Name="SENH_ACC" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDPIM.dbo.EBRX_SOLICT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EBRX_SOLICT">
+    <Key>
+      <PropertyRef Name="COD_INT_SOL" />
+    </Key>
+    <Property Name="COD_INT_SOL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESC_NOM_SOL" Type="varchar" MaxLength="60" />
+    <Property Name="PRAZO_FLOAT_SOL" Type="float" />
+    <Property Name="DT_ATUALIZAC" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_CLIENT_SOLCT_ID">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="0..1" />
+    <End Role="EBRX_CLIENT_SOLICIT" Type="Self.EBRX_CLIENT_SOLICIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_CLIENT_SOLICIT">
+        <PropertyRef Name="EBRX_CLIENTE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TIP_SOLCT_ID">
+    <End Role="EBRX_SOLICT" Type="Self.EBRX_SOLICT" Multiplicity="0..1" />
+    <End Role="EBRX_CLIENT_SOLICIT" Type="Self.EBRX_CLIENT_SOLICIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_SOLICT">
+        <PropertyRef Name="COD_INT_SOL" />
+      </Principal>
+      <Dependent Role="EBRX_CLIENT_SOLICIT">
+        <PropertyRef Name="TIP_STR_SOL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SolicitacaoAtendmntStoreContainer">
+    <EntitySet Name="EBRX_CLIENT_SOLICIT" EntityType="Self.EBRX_CLIENT_SOLICIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_CLIENTE" EntityType="Self.EBRX_CLIENTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_SOLICT" EntityType="Self.EBRX_SOLICT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EBRX_SOLICT].[COD_INT_SOL] AS [COD_INT_SOL], 
+    [EBRX_SOLICT].[DESC_NOM_SOL] AS [DESC_NOM_SOL], 
+    [EBRX_SOLICT].[PRAZO_FLOAT_SOL] AS [PRAZO_FLOAT_SOL], 
+    [EBRX_SOLICT].[DT_ATUALIZAC] AS [DT_ATUALIZAC]
+    FROM [dbo].[EBRX_SOLICT] AS [EBRX_SOLICT]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_CLIENT_SOLCT_ID" Association="Self.FK_CLIENT_SOLCT_ID">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_CLIENT_SOLICIT" EntitySet="EBRX_CLIENT_SOLICIT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TIP_SOLCT_ID" Association="Self.FK_TIP_SOLCT_ID">
+      <End Role="EBRX_SOLICT" EntitySet="EBRX_SOLICT" />
+      <End Role="EBRX_CLIENT_SOLICIT" EntitySet="EBRX_CLIENT_SOLICIT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

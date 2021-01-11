@@ -1,0 +1,101 @@
+﻿@model OfcPim.Models.EBRX_BANCO_CONTA
+
+@{
+    ViewBag.Title = "BankAccountCreate";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<link href="~/Content/css/SolictPage/SolictServi.css" rel="stylesheet" />
+
+@if (TempData["Sucess"] != null)
+{
+    <div style="border:1px solid green">
+        @TempData["Sucess"]
+    </div>
+}
+
+<div class="titulo_page">
+    <h1>Adicionar uma Nova conta Bancaria</h1>
+    <h2>Registre Contas de instituições para saques e depósitos.</h2>
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-half">
+
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <h4>Preencha As Informações</h4>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.EBRX_CLIENT_CPF, "Informe o seu CPF ", htmlAttributes: new { @class = "label" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.EBRX_CLIENT_CPF, new { htmlAttributes = new { @class = "input" } })
+                                @Html.ValidationMessageFor(model => model.EBRX_CLIENT_CPF, "", new { htmlAttributes = new { @class = "input" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.INSTI_BANCO_COD, "Escolha A institituição da Conta", htmlAttributes: new { @class = "label" })
+                            <div class="col-md-10">
+
+                                @Html.DropDownListFor(e => e.INSTI_BANCO_COD, ViewBag.InstiBancarias as IEnumerable<SelectListItem>, "Selecione")
+                                @Html.ValidationMessageFor(model => model.INSTI_BANCO_COD, "", new { @class = "text-danger" })
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.AGENC_NUMERO, "Agência", htmlAttributes: new { @class = "label" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.AGENC_NUMERO, new { htmlAttributes = new { @class = "input" } })
+                                @Html.ValidationMessageFor(model => model.AGENC_NUMERO, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.CONT_STR_BANCO, "Conta", htmlAttributes: new { @class = "label" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.CONT_STR_BANCO, new { htmlAttributes = new { @class = "input" } })
+                                @Html.ValidationMessageFor(model => model.CONT_STR_BANCO, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.DIGT_STR_BANCO, "Digito", htmlAttributes: new { @class = "label" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.DIGT_STR_BANCO, new { htmlAttributes = new { @class = "input" } })
+                                @Html.ValidationMessageFor(model => model.DIGT_STR_BANCO, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Adicionar Conta Bancária" class="button is-link is-medium" />
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+@section ScriptPage{
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

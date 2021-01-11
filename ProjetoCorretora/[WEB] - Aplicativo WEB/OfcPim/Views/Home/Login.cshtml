@@ -1,0 +1,66 @@
+﻿@model OfcPim.Models.EBRX_CLIENTE
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutHeaderFooter.cshtml";
+}
+
+<link href="~/Content/css/LoginStylin/estilo02.css" rel="stylesheet" />
+
+@if (TempData["FailMessage"] != null)
+{
+    <div class="alertMessage" style="border:1px solid red">
+        @TempData["FailMessage"]
+    </div>
+}
+
+    <div id="main">
+
+        @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+        {
+
+            @Html.AntiForgeryToken() // previne o ataque CSRF
+            @Html.ValidationSummary(true)
+            if (@ViewBag.Message != null)
+            {
+                <div style="border:1px solid red">
+                    @ViewBag.Message
+                </div>
+            }
+
+            <div class="login">
+                <img src="~/images/login.png" class="usuario" width="100" height="100" alt="">
+                <h1>ACESSO EBRAX</h1>
+                <table>
+
+                    <tr>
+                        <td><p>@Html.LabelFor(a => a.CPF_STR_CLI, "Digite seu CPF", new { htmlAttributes = new { @class = " p" } })</p></td>
+                        <td> @Html.TextBoxFor(a => a.CPF_STR_CLI, new { htmlAttributes = new { @class = "input" } })</td>
+                        <td>@Html.ValidationMessageFor(a => a.CPF_STR_CLI)</td>
+                    </tr>
+                    <tr>
+                        <td><p> @Html.LabelFor(a => a.SENH_ACC, "Digite sua senha", new { htmlAttributes = new { @class = "p" } })</p></td>
+                        <td> @Html.PasswordFor(a => a.SENH_ACC, new { htmlAttributes = new { @class = "input" } })</td>
+                        <td> @Html.ValidationMessageFor(a => a.SENH_ACC) </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Avançar" />
+                            <a href="#">Esqueceu sua senha?</a>
+                            <br>
+                            <a href="#">Ainda não possui uma conta?</a>
+                        </td>
+                        <td></td>
+
+                    </tr>
+
+
+                </table>
+            </div>
+
+        }
+    </div>
+        @section Scripts{
+            @Scripts.Render("~/bundles/jqueryval")
+        }

@@ -1,0 +1,84 @@
+﻿@model OfcPim.Models.EBRX_CLIENTE
+
+@{
+    ViewBag.Title = "MinhaConta";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("MinhaConta", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="titulo_page">
+        <h1>Sua Conta EBRAX</h1>
+        <h3>Aqui você tem as informações da sua Conta na EBRAX.</h3>
+        <div>
+            <h2>Dados da sua conta</h2>
+        </div>
+    </div>
+
+    <div class="informacoes-conta">
+
+        <div class="user-information">
+            <div class="titulo-botao">
+                <h1>Minhas Informações</h1>
+
+
+
+                <!--<a href="#">Editar Informações</a>-->
+            </div>
+
+            <div class="informacao-user">
+                <dt>
+                    Nome : @Session["nomeUsuarioLogado"].ToString()
+                </dt>
+                <dt>
+                    CPF: @Session["cpfCliente"].ToString()
+                </dt>
+                <dt>
+                    EMAIL: @Session["emailCliente"].ToString()
+                </dt>
+                <dt>
+                    Data de Nascimento: @Session["dataNascCliente"].ToString()
+                </dt>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="account-box">
+            <h4>Informações para realizar transferências</h4>
+            <div class="informacao-conta">
+                <div class="title-acc">
+                    <h2>Minha Conta</h2>
+                </div>
+
+                <div>
+                    <div>
+                        <dt>
+                            Banco: EX - EBRAX.
+                        </dt>
+                        <dt>
+                            Agencia: 0356
+                        </dt>
+                        <dt>
+                            Conta: 11876-2
+                        </dt>
+                        <dt>
+                            Digito: 10
+                        </dt>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+}
+@section ScriptPage{
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BankAccountModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EBRX_BANCO_CONTA">
+    <Key>
+      <PropertyRef Name="COD_INT_CONTA_ID" />
+    </Key>
+    <Property Name="COD_INT_CONTA_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EBRX_CLIENTE_CLI_COD" Type="Int32" Nullable="false" />
+    <Property Name="INSTI_BANCO_COD" Type="Int32" Nullable="false" />
+    <Property Name="CONT_STR_BANCO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIGT_STR_BANCO" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AGENC_NUMERO" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INSTI_BANCO" Relationship="Self.FK_BANC_INST_ID" FromRole="EBRX_BANCO_CONTA" ToRole="INSTI_BANCO" />
+  </EntityType>
+  <EntityType Name="INSTI_BANCO">
+    <Key>
+      <PropertyRef Name="BANCO_INT_ID" />
+    </Key>
+    <Property Name="BANCO_INT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME_STR_BANK" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CNPJ_STR_BANK" Type="String" MaxLength="14" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EBRX_BANCO_CONTA" Relationship="Self.FK_BANC_INST_ID" FromRole="INSTI_BANCO" ToRole="EBRX_BANCO_CONTA" />
+  </EntityType>
+  <Association Name="FK_BANC_INST_ID">
+    <End Role="INSTI_BANCO" Type="Self.INSTI_BANCO" Multiplicity="1" />
+    <End Role="EBRX_BANCO_CONTA" Type="Self.EBRX_BANCO_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INSTI_BANCO">
+        <PropertyRef Name="BANCO_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_BANCO_CONTA">
+        <PropertyRef Name="INSTI_BANCO_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BankAccountEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EBRX_BANCO_CONTA" EntityType="Self.EBRX_BANCO_CONTA" />
+    <EntitySet Name="INSTI_BANCO" EntityType="Self.INSTI_BANCO" />
+    <AssociationSet Name="FK_BANC_INST_ID" Association="Self.FK_BANC_INST_ID">
+      <End Role="INSTI_BANCO" EntitySet="INSTI_BANCO" />
+      <End Role="EBRX_BANCO_CONTA" EntitySet="EBRX_BANCO_CONTA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

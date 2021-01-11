@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Service";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+
+
+    <div class="titulo_page">
+        <h1>Serviços</h1>
+        <h2>Escolha os serviços disponiveis!</h2>
+    </div>
+
+    <div class="estrutura">
+
+        <div class="s-caixa">
+            <div class="s-b-imag">
+                <div class="s-tipo">Contas Bancárias</div> <!--TITULO ---------------------->
+                <!--IMAGEM ---------------------->
+            </div>
+            <div class="s-b-texto">
+                <!--TEXTO---------------------->
+                <a>@Html.ActionLink("Adicione ou exclua suas contas bancárias. Limite de no máximo 3 contas.", "BankAccountCreate", "Home")</a>
+            </div>
+
+        </div>
+
+        <!--Caixa explicativa #2--------->
+        <div class="s-caixa">
+            <div class="s-b-imag">
+                <div class="s-tipo">Você Ciente</div><!--TITULO ---------------------->
+            </div>
+            <div class="s-b-texto">
+                <!--TEXTO---------------------->
+                <a>@Html.ActionLink("Solicite um relatório para você saber o que estamos fazendo com as informações :D", "SolicitaAtendmnt", "Home", @Session["nomeUsuarioLogado"].ToString()) </a>
+            </div>
+        </div>
+
+
+    </div>
+
+@section ScriptPage{
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

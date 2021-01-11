@@ -1,0 +1,99 @@
+
+
+.estrutura{
+
+	display: 	flex;
+	justify-content: center;
+
+	margin-top: 60px;
+	margin-left: 70px;
+	padding: 5px;
+	width: calc(100% - 70px);
+}
+
+.click_collapse .estrutura{
+	width: calc(100% - 250px);
+  margin-left: 350px;
+
+	transition: all 0.9s ease;
+}
+.titulo_page{
+	display: 	center;
+	justify-content: center;
+	align-content: center;
+
+	margin-top: 60px;
+	margin-left: 70px;
+	padding: 5px;
+	width: calc(100% - 70px);
+}
+
+.click_collapse .titulo_page{
+	width: calc(100% - 250px);
+	margin-left: 350px;
+	transition: all 0.9s ease;
+}
+
+
+
+.s-caixa{
+background-color: #ffffff;
+width:450px;
+height: 200px;
+margin: 20px;
+border-radius: 10px;
+overflow: hidden;
+
+position:   relative;
+
+}
+
+.s-b-imag{
+width: 100%;
+height: 70%;
+
+}
+
+.s-b-texto{
+width: 100%;
+height: 30%;
+background-color:#DC143C;
+display:flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.s-b-texto a{
+margin: 0px;
+color:#ffd1d1;
+font-size: 1.1rem;
+font-family: calibri;
+display: flex;
+  display: -webkit-box;
+max-width: 80%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.s-b-texto a:hover{
+color:rgba(255, 255, 255, 0.5)
+}
+.s-tipo{
+font-family: calibri;
+color:#FFFFFF;
+background-color: #DC143C;
+padding: 10px 15px;
+position: absolute;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 18px;
+border-radius: 0px 0px 10px 10px;
+box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.s-box:hover{
+transform:translateY(-10px);
+transition: all ease 0.3s;
+
+}

@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PIMUNIPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EBRX_BANCO_CONTA">
+    <Key>
+      <PropertyRef Name="COD_INT_CONTA_ID" />
+    </Key>
+    <Property Name="COD_INT_CONTA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_CLIENT_CPF" Type="char" MaxLength="11" />
+    <Property Name="INSTI_BANCO_COD" Type="int" />
+    <Property Name="CONT_STR_BANCO" Type="varchar" MaxLength="15" />
+    <Property Name="DIGT_STR_BANCO" Type="varchar" MaxLength="3" />
+    <Property Name="AGENC_NUMERO" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="EBRX_CARTEIRA">
+    <Key>
+      <PropertyRef Name="CAR_INT_ID" />
+    </Key>
+    <Property Name="CAR_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_CLIENT_ID" Type="int" />
+    <Property Name="EBRX_MOEDA_MOE_STR_ID" Type="int" />
+    <Property Name="SALD_STR_CRIP" Type="float" />
+    <Property Name="SALD_STR_DINHR" Type="float" />
+    <Property Name="DT_ATUALIZACAO" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EBRX_CLIENT_SOLICIT">
+    <Key>
+      <PropertyRef Name="PROTOCOL_INT_ID" />
+    </Key>
+    <Property Name="PROTOCOL_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_FUNC_PROFILE_COD" Type="int" />
+    <Property Name="EBRX_CLIENTE_CPF" Type="char" MaxLength="11" />
+    <Property Name="TIP_STR_SOL" Type="int" />
+    <Property Name="DESC_STR_SOL" Type="varchar" MaxLength="300" />
+    <Property Name="SITUAC_ATENDMNT" Type="int" />
+    <Property Name="DT_ATUALIZCAO" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EBRX_CLIENTE">
+    <Key>
+      <PropertyRef Name="CLI_INT_ID" />
+    </Key>
+    <Property Name="CLI_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME_STR_CLI" Type="varchar" MaxLength="50" />
+    <Property Name="CPF_STR_CLI" Type="char" MaxLength="11" />
+    <Property Name="DT_NASC_CLI" Type="date" />
+    <Property Name="EMAIL_STR_CLI" Type="varchar" MaxLength="100" />
+    <Property Name="DAT_INCLS_CLI" Type="datetime" />
+    <Property Name="STATS_STR_CLI" Type="char" MaxLength="1" />
+    <Property Name="DAT_ATUALIZC" Type="datetime" />
+    <Property Name="SENH_ACC" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="EBRX_CONTA">
+    <Key>
+      <PropertyRef Name="ACC_INT_ID" />
+    </Key>
+    <Property Name="ACC_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_CARTEIRA_ID" Type="int" />
+    <Property Name="EBRX_CLIENT_ID" Type="int" />
+    <Property Name="AGC_STR_ACC" Type="char" MaxLength="4" />
+    <Property Name="CONT_NUM_ACC" Type="char" MaxLength="5" />
+    <Property Name="DIG_STR_ACC" Type="char" MaxLength="1" />
+    <Property Name="SENH_STR_ACC" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PIMUNIP.dbo.EBRX_COTACAO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EBRX_COTACAO">
+    <Key>
+      <PropertyRef Name="EBRX_MOEDA_COD" />
+    </Key>
+    <Property Name="EBRX_MOEDA_COD" Type="int" Nullable="false" />
+    <Property Name="VLR_DOU_COT" Type="float" />
+  </EntityType>
+  <EntityType Name="EBRX_EXTRATO_CONTA">
+    <Key>
+      <PropertyRef Name="EBRX_CLIENTE_CLI_COD" />
+    </Key>
+    <Property Name="EBRX_CLIENTE_CLI_COD" Type="int" Nullable="false" />
+    <Property Name="EBRX_ORDER_COD" Type="int" />
+    <Property Name="EBRX_TRAN_COD" Type="int" />
+    <Property Name="VLR_DOU_TRAN" Type="float" />
+    <Property Name="QTD_STR_CRIPT" Type="varchar" MaxLength="20" />
+    <Property Name="DT_ATUALIZC" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EBRX_FUNC_PROFILE">
+    <Key>
+      <PropertyRef Name="COD_PROFILE" />
+    </Key>
+    <Property Name="COD_PROFILE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_FUNCRH_COD" Type="int" />
+    <Property Name="SENH_STR_ACESS" Type="varchar" MaxLength="25" />
+    <Property Name="MATRIC_STR_ACESS" Type="char" MaxLength="7" />
+  </EntityType>
+  <EntityType Name="EBRX_FUNCRH">
+    <Key>
+      <PropertyRef Name="COD_FUNC" />
+    </Key>
+    <Property Name="COD_FUNC" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MATRIC_STR_FUNC" Type="char" MaxLength="7" />
+    <Property Name="NOME_STR_FUNC" Type="varchar" MaxLength="50" />
+    <Property Name="SITU_STR_FUNC" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="EBRX_HIST_COD">
+    <Key>
+      <PropertyRef Name="COD_INT_ID" />
+    </Key>
+    <Property Name="COD_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_CLIENTE_CLI_COD" Type="int" />
+    <Property Name="ALTER_DESC" Type="varchar" MaxLength="40" />
+    <Property Name="DT_ATUALIZAC" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PIMUNIP.dbo.EBRX_MOEDA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EBRX_MOEDA">
+    <Key>
+      <PropertyRef Name="MOE_STR_ID" />
+    </Key>
+    <Property Name="MOE_STR_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MOE_STR_DESC" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="EBRX_ORDER">
+    <Key>
+      <PropertyRef Name="COD_ORDER" />
+    </Key>
+    <Property Name="COD_ORDER" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_TIP_ORDR_COD" Type="int" />
+    <Property Name="EBRX_MOEDA_MOE_COD" Type="int" />
+    <Property Name="EBRX_CLIENTE_CLI_COD" Type="int" />
+    <Property Name="VLR_ORDER" Type="float" />
+    <Property Name="QTD_CRIPT" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PIMUNIP.dbo.EBRX_SOLICT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EBRX_SOLICT">
+    <Key>
+      <PropertyRef Name="COD_INT_SOL" />
+    </Key>
+    <Property Name="COD_INT_SOL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESC_NOM_SOL" Type="varchar" MaxLength="60" />
+    <Property Name="PRAZO_FLOAT_SOL" Type="float" />
+    <Property Name="DT_ATUALIZAC" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EBRX_TIP_ORDR">
+    <Key>
+      <PropertyRef Name="COD_INT_ID" />
+    </Key>
+    <Property Name="COD_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESC_STR_ORDER" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="EBRX_TIP_TRAN">
+    <Key>
+      <PropertyRef Name="COD_INT_ID" />
+    </Key>
+    <Property Name="COD_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESC_STR_TRAN" Type="varchar" MaxLength="15" />
+    <Property Name="PERC_TRAN" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PIMUNIP.dbo.EBRX_TRAN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EBRX_TRAN">
+    <Key>
+      <PropertyRef Name="COD_TRAN_ID" />
+    </Key>
+    <Property Name="COD_TRAN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_MOEDA_MOE_COD" Type="int" />
+    <Property Name="EBRX_CLIENTE_CLI_COD" Type="int" />
+    <Property Name="EBRX_TIP_TRAN_COD" Type="int" />
+    <Property Name="VLR_TRANS" Type="float" />
+  </EntityType>
+  <EntityType Name="INSTI_BANCO">
+    <Key>
+      <PropertyRef Name="BANCO_INT_ID" />
+    </Key>
+    <Property Name="BANCO_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME_STR_BANK" Type="varchar" MaxLength="40" />
+    <Property Name="CNPJ_STR_BANK" Type="char" MaxLength="14" />
+  </EntityType>
+  <Association Name="FK_BANC_INST_ID">
+    <End Role="INSTI_BANCO" Type="Self.INSTI_BANCO" Multiplicity="0..1" />
+    <End Role="EBRX_BANCO_CONTA" Type="Self.EBRX_BANCO_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INSTI_BANCO">
+        <PropertyRef Name="BANCO_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_BANCO_CONTA">
+        <PropertyRef Name="INSTI_BANCO_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENT_CARTEIRA_ID">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="0..1" />
+    <End Role="EBRX_CARTEIRA" Type="Self.EBRX_CARTEIRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_CARTEIRA">
+        <PropertyRef Name="EBRX_CLIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENT_CONT_ID">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="0..1" />
+    <End Role="EBRX_CONTA" Type="Self.EBRX_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_CONTA">
+        <PropertyRef Name="EBRX_CLIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENT_EXTRT_ID">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="1" />
+    <End Role="EBRX_EXTRATO_CONTA" Type="Self.EBRX_EXTRATO_CONTA" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_EXTRATO_CONTA">
+        <PropertyRef Name="EBRX_CLIENTE_CLI_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENT_ORDR_ID">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="0..1" />
+    <End Role="EBRX_TRAN" Type="Self.EBRX_TRAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_TRAN">
+        <PropertyRef Name="EBRX_CLIENTE_CLI_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONT_CARTEIR_ID">
+    <End Role="EBRX_CARTEIRA" Type="Self.EBRX_CARTEIRA" Multiplicity="0..1" />
+    <End Role="EBRX_CONTA" Type="Self.EBRX_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CARTEIRA">
+        <PropertyRef Name="CAR_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_CONTA">
+        <PropertyRef Name="EBRX_CARTEIRA_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FUNC_ATENDMNT">
+    <End Role="EBRX_FUNC_PROFILE" Type="Self.EBRX_FUNC_PROFILE" Multiplicity="0..1" />
+    <End Role="EBRX_CLIENT_SOLICIT" Type="Self.EBRX_CLIENT_SOLICIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_FUNC_PROFILE">
+        <PropertyRef Name="COD_PROFILE" />
+      </Principal>
+      <Dependent Role="EBRX_CLIENT_SOLICIT">
+        <PropertyRef Name="EBRX_FUNC_PROFILE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_H_CAD_CLIENT">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="0..1" />
+    <End Role="EBRX_HIST_COD" Type="Self.EBRX_HIST_COD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_HIST_COD">
+        <PropertyRef Name="EBRX_CLIENTE_CLI_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOED_CARTEIR_ID">
+    <End Role="EBRX_MOEDA" Type="Self.EBRX_MOEDA" Multiplicity="0..1" />
+    <End Role="EBRX_CARTEIRA" Type="Self.EBRX_CARTEIRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_MOEDA">
+        <PropertyRef Name="MOE_STR_ID" />
+      </Principal>
+      <Dependent Role="EBRX_CARTEIRA">
+        <PropertyRef Name="EBRX_MOEDA_MOE_STR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOED_COT_ID">
+    <End Role="EBRX_MOEDA" Type="Self.EBRX_MOEDA" Multiplicity="1" />
+    <End Role="EBRX_COTACAO" Type="Self.EBRX_COTACAO" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_MOEDA">
+        <PropertyRef Name="MOE_STR_ID" />
+      </Principal>
+      <Dependent Role="EBRX_COTACAO">
+        <PropertyRef Name="EBRX_MOEDA_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOED_TRAN_ID">
+    <End Role="EBRX_MOEDA" Type="Self.EBRX_MOEDA" Multiplicity="0..1" />
+    <End Role="EBRX_ORDER" Type="Self.EBRX_ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_MOEDA">
+        <PropertyRef Name="MOE_STR_ID" />
+      </Principal>
+      <Dependent Role="EBRX_ORDER">
+        <PropertyRef Name="EBRX_MOEDA_MOE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDER_EXTRT_COD">
+    <End Role="EBRX_ORDER" Type="Self.EBRX_ORDER" Multiplicity="0..1" />
+    <End Role="EBRX_EXTRATO_CONTA" Type="Self.EBRX_EXTRATO_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_ORDER">
+        <PropertyRef Name="COD_ORDER" />
+      </Principal>
+      <Dependent Role="EBRX_EXTRATO_CONTA">
+        <PropertyRef Name="EBRX_ORDER_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDR_CLIENT_ID">
+    <End Role="EBRX_CLIENTE" Type="Self.EBRX_CLIENTE" Multiplicity="0..1" />
+    <End Role="EBRX_ORDER" Type="Self.EBRX_ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_CLIENTE">
+        <PropertyRef Name="CLI_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_ORDER">
+        <PropertyRef Name="EBRX_CLIENTE_CLI_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RH_FUNC">
+    <End Role="EBRX_FUNCRH" Type="Self.EBRX_FUNCRH" Multiplicity="0..1" />
+    <End Role="EBRX_FUNC_PROFILE" Type="Self.EBRX_FUNC_PROFILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_FUNCRH">
+        <PropertyRef Name="COD_FUNC" />
+      </Principal>
+      <Dependent Role="EBRX_FUNC_PROFILE">
+        <PropertyRef Name="EBRX_FUNCRH_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TIP_ORDER_ID">
+    <End Role="EBRX_TIP_ORDR" Type="Self.EBRX_TIP_ORDR" Multiplicity="0..1" />
+    <End Role="EBRX_ORDER" Type="Self.EBRX_ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_TIP_ORDR">
+        <PropertyRef Name="COD_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_ORDER">
+        <PropertyRef Name="EBRX_TIP_ORDR_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TIP_SOLCT_ID">
+    <End Role="EBRX_SOLICT" Type="Self.EBRX_SOLICT" Multiplicity="0..1" />
+    <End Role="EBRX_CLIENT_SOLICIT" Type="Self.EBRX_CLIENT_SOLICIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_SOLICT">
+        <PropertyRef Name="COD_INT_SOL" />
+      </Principal>
+      <Dependent Role="EBRX_CLIENT_SOLICIT">
+        <PropertyRef Name="TIP_STR_SOL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TIP_TRAN_ID">
+    <End Role="EBRX_TIP_TRAN" Type="Self.EBRX_TIP_TRAN" Multiplicity="0..1" />
+    <End Role="EBRX_TRAN" Type="Self.EBRX_TRAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_TIP_TRAN">
+        <PropertyRef Name="COD_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_TRAN">
+        <PropertyRef Name="EBRX_TIP_TRAN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRAN_EXTRT_COD">
+    <End Role="EBRX_TRAN" Type="Self.EBRX_TRAN" Multiplicity="0..1" />
+    <End Role="EBRX_EXTRATO_CONTA" Type="Self.EBRX_EXTRATO_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_TRAN">
+        <PropertyRef Name="COD_TRAN_ID" />
+      </Principal>
+      <Dependent Role="EBRX_EXTRATO_CONTA">
+        <PropertyRef Name="EBRX_TRAN_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRAN_MOED_ID">
+    <End Role="EBRX_MOEDA" Type="Self.EBRX_MOEDA" Multiplicity="0..1" />
+    <End Role="EBRX_TRAN" Type="Self.EBRX_TRAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBRX_MOEDA">
+        <PropertyRef Name="MOE_STR_ID" />
+      </Principal>
+      <Dependent Role="EBRX_TRAN">
+        <PropertyRef Name="EBRX_MOEDA_MOE_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PIMUNIPModelStoreContainer">
+    <EntitySet Name="EBRX_BANCO_CONTA" EntityType="Self.EBRX_BANCO_CONTA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_CARTEIRA" EntityType="Self.EBRX_CARTEIRA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_CLIENT_SOLICIT" EntityType="Self.EBRX_CLIENT_SOLICIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_CLIENTE" EntityType="Self.EBRX_CLIENTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_CONTA" EntityType="Self.EBRX_CONTA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_EXTRATO_CONTA" EntityType="Self.EBRX_EXTRATO_CONTA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_FUNC_PROFILE" EntityType="Self.EBRX_FUNC_PROFILE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_FUNCRH" EntityType="Self.EBRX_FUNCRH" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_HIST_COD" EntityType="Self.EBRX_HIST_COD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_ORDER" EntityType="Self.EBRX_ORDER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_TIP_ORDR" EntityType="Self.EBRX_TIP_ORDR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_TIP_TRAN" EntityType="Self.EBRX_TIP_TRAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INSTI_BANCO" EntityType="Self.INSTI_BANCO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBRX_COTACAO" EntityType="Self.EBRX_COTACAO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EBRX_COTACAO].[EBRX_MOEDA_COD] AS [EBRX_MOEDA_COD], 
+    [EBRX_COTACAO].[VLR_DOU_COT] AS [VLR_DOU_COT]
+    FROM [dbo].[EBRX_COTACAO] AS [EBRX_COTACAO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EBRX_MOEDA" EntityType="Self.EBRX_MOEDA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EBRX_MOEDA].[MOE_STR_ID] AS [MOE_STR_ID], 
+    [EBRX_MOEDA].[MOE_STR_DESC] AS [MOE_STR_DESC]
+    FROM [dbo].[EBRX_MOEDA] AS [EBRX_MOEDA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EBRX_SOLICT" EntityType="Self.EBRX_SOLICT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EBRX_SOLICT].[COD_INT_SOL] AS [COD_INT_SOL], 
+    [EBRX_SOLICT].[DESC_NOM_SOL] AS [DESC_NOM_SOL], 
+    [EBRX_SOLICT].[PRAZO_FLOAT_SOL] AS [PRAZO_FLOAT_SOL], 
+    [EBRX_SOLICT].[DT_ATUALIZAC] AS [DT_ATUALIZAC]
+    FROM [dbo].[EBRX_SOLICT] AS [EBRX_SOLICT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EBRX_TRAN" EntityType="Self.EBRX_TRAN" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EBRX_TRAN].[COD_TRAN_ID] AS [COD_TRAN_ID], 
+    [EBRX_TRAN].[EBRX_MOEDA_MOE_COD] AS [EBRX_MOEDA_MOE_COD], 
+    [EBRX_TRAN].[EBRX_CLIENTE_CLI_COD] AS [EBRX_CLIENTE_CLI_COD], 
+    [EBRX_TRAN].[EBRX_TIP_TRAN_COD] AS [EBRX_TIP_TRAN_COD], 
+    [EBRX_TRAN].[VLR_TRANS] AS [VLR_TRANS]
+    FROM [dbo].[EBRX_TRAN] AS [EBRX_TRAN]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_BANC_INST_ID" Association="Self.FK_BANC_INST_ID">
+      <End Role="INSTI_BANCO" EntitySet="INSTI_BANCO" />
+      <End Role="EBRX_BANCO_CONTA" EntitySet="EBRX_BANCO_CONTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENT_CARTEIRA_ID" Association="Self.FK_CLIENT_CARTEIRA_ID">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_CARTEIRA" EntitySet="EBRX_CARTEIRA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENT_CONT_ID" Association="Self.FK_CLIENT_CONT_ID">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_CONTA" EntitySet="EBRX_CONTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENT_EXTRT_ID" Association="Self.FK_CLIENT_EXTRT_ID">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_EXTRATO_CONTA" EntitySet="EBRX_EXTRATO_CONTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENT_ORDR_ID" Association="Self.FK_CLIENT_ORDR_ID">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_TRAN" EntitySet="EBRX_TRAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONT_CARTEIR_ID" Association="Self.FK_CONT_CARTEIR_ID">
+      <End Role="EBRX_CARTEIRA" EntitySet="EBRX_CARTEIRA" />
+      <End Role="EBRX_CONTA" EntitySet="EBRX_CONTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FUNC_ATENDMNT" Association="Self.FK_FUNC_ATENDMNT">
+      <End Role="EBRX_FUNC_PROFILE" EntitySet="EBRX_FUNC_PROFILE" />
+      <End Role="EBRX_CLIENT_SOLICIT" EntitySet="EBRX_CLIENT_SOLICIT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_H_CAD_CLIENT" Association="Self.FK_H_CAD_CLIENT">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_HIST_COD" EntitySet="EBRX_HIST_COD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOED_CARTEIR_ID" Association="Self.FK_MOED_CARTEIR_ID">
+      <End Role="EBRX_MOEDA" EntitySet="EBRX_MOEDA" />
+      <End Role="EBRX_CARTEIRA" EntitySet="EBRX_CARTEIRA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOED_COT_ID" Association="Self.FK_MOED_COT_ID">
+      <End Role="EBRX_MOEDA" EntitySet="EBRX_MOEDA" />
+      <End Role="EBRX_COTACAO" EntitySet="EBRX_COTACAO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOED_TRAN_ID" Association="Self.FK_MOED_TRAN_ID">
+      <End Role="EBRX_MOEDA" EntitySet="EBRX_MOEDA" />
+      <End Role="EBRX_ORDER" EntitySet="EBRX_ORDER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDER_EXTRT_COD" Association="Self.FK_ORDER_EXTRT_COD">
+      <End Role="EBRX_ORDER" EntitySet="EBRX_ORDER" />
+      <End Role="EBRX_EXTRATO_CONTA" EntitySet="EBRX_EXTRATO_CONTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDR_CLIENT_ID" Association="Self.FK_ORDR_CLIENT_ID">
+      <End Role="EBRX_CLIENTE" EntitySet="EBRX_CLIENTE" />
+      <End Role="EBRX_ORDER" EntitySet="EBRX_ORDER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RH_FUNC" Association="Self.FK_RH_FUNC">
+      <End Role="EBRX_FUNCRH" EntitySet="EBRX_FUNCRH" />
+      <End Role="EBRX_FUNC_PROFILE" EntitySet="EBRX_FUNC_PROFILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TIP_ORDER_ID" Association="Self.FK_TIP_ORDER_ID">
+      <End Role="EBRX_TIP_ORDR" EntitySet="EBRX_TIP_ORDR" />
+      <End Role="EBRX_ORDER" EntitySet="EBRX_ORDER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TIP_SOLCT_ID" Association="Self.FK_TIP_SOLCT_ID">
+      <End Role="EBRX_SOLICT" EntitySet="EBRX_SOLICT" />
+      <End Role="EBRX_CLIENT_SOLICIT" EntitySet="EBRX_CLIENT_SOLICIT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TIP_TRAN_ID" Association="Self.FK_TIP_TRAN_ID">
+      <End Role="EBRX_TIP_TRAN" EntitySet="EBRX_TIP_TRAN" />
+      <End Role="EBRX_TRAN" EntitySet="EBRX_TRAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRAN_EXTRT_COD" Association="Self.FK_TRAN_EXTRT_COD">
+      <End Role="EBRX_TRAN" EntitySet="EBRX_TRAN" />
+      <End Role="EBRX_EXTRATO_CONTA" EntitySet="EBRX_EXTRATO_CONTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRAN_MOED_ID" Association="Self.FK_TRAN_MOED_ID">
+      <End Role="EBRX_MOEDA" EntitySet="EBRX_MOEDA" />
+      <End Role="EBRX_TRAN" EntitySet="EBRX_TRAN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BankAccountModelStoreContainer" CdmEntityContainer="BankAccountEntities">
+    <EntitySetMapping Name="EBRX_BANCO_CONTA">
+      <EntityTypeMapping TypeName="BankAccountModel.EBRX_BANCO_CONTA">
+        <MappingFragment StoreEntitySet="EBRX_BANCO_CONTA">
+          <ScalarProperty Name="COD_INT_CONTA_ID" ColumnName="COD_INT_CONTA_ID" />
+          <ScalarProperty Name="EBRX_CLIENTE_CLI_COD" ColumnName="EBRX_CLIENTE_CLI_COD" />
+          <ScalarProperty Name="INSTI_BANCO_COD" ColumnName="INSTI_BANCO_COD" />
+          <ScalarProperty Name="CONT_STR_BANCO" ColumnName="CONT_STR_BANCO" />
+          <ScalarProperty Name="DIGT_STR_BANCO" ColumnName="DIGT_STR_BANCO" />
+          <ScalarProperty Name="AGENC_NUMERO" ColumnName="AGENC_NUMERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INSTI_BANCO">
+      <EntityTypeMapping TypeName="BankAccountModel.INSTI_BANCO">
+        <MappingFragment StoreEntitySet="INSTI_BANCO">
+          <ScalarProperty Name="BANCO_INT_ID" ColumnName="BANCO_INT_ID" />
+          <ScalarProperty Name="NOME_STR_BANK" ColumnName="NOME_STR_BANK" />
+          <ScalarProperty Name="CNPJ_STR_BANK" ColumnName="CNPJ_STR_BANK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

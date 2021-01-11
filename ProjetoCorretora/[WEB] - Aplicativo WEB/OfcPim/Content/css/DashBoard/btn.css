@@ -1,0 +1,18 @@
+
+
+.btnLogoff a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 15px;
+    color: #DC143C; /*Cor dos botões de LOGIN e CADASTRO*/
+    background-color: transparent;
+    border: 2px solid #DC143C;
+    border-radius: 5px;
+}
+    .btnLogoff a:hover {
+        background-color: #DC143C;
+        color: #fff !important;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all ease 0.4s;
+    }
+/******************************************************************************************************/

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AddBankAcc.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EBRX_CONTA">
+          <Key>
+            <PropertyRef Name="ACC_INT_ID" />
+          </Key>
+          <Property Name="ACC_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EBRX_CARTEIRA_ID" Type="int" Nullable="false" />
+          <Property Name="EBRX_CLIENT_ID" Type="int" Nullable="false" />
+          <Property Name="AGC_STR_ACC" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="CONT_NUM_ACC" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="DIG_STR_ACC" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="INSTI_BANCO">
+          <Key>
+            <PropertyRef Name="BANCO_INT_ID" />
+          </Key>
+          <Property Name="BANCO_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOME_STR_BANK" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CNPJ_STR_BANK" Type="char" MaxLength="14" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AddBankAccStoreContainer">
+          <EntitySet Name="EBRX_CONTA" EntityType="Self.EBRX_CONTA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INSTI_BANCO" EntityType="Self.INSTI_BANCO" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AddBankAcc" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EBRX_CONTA">
+          <Key>
+            <PropertyRef Name="ACC_INT_ID" />
+          </Key>
+          <Property Name="ACC_INT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EBRX_CARTEIRA_ID" Type="Int32" Nullable="false" />
+          <Property Name="EBRX_CLIENT_ID" Type="Int32" Nullable="false" />
+          <Property Name="AGC_STR_ACC" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CONT_NUM_ACC" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DIG_STR_ACC" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="INSTI_BANCO">
+          <Key>
+            <PropertyRef Name="BANCO_INT_ID" />
+          </Key>
+          <Property Name="BANCO_INT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOME_STR_BANK" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CNPJ_STR_BANK" Type="String" MaxLength="14" FixedLength="true" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="UserBankAcc" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EBRX_CONTA" EntityType="Self.EBRX_CONTA" />
+          <EntitySet Name="INSTI_BANCO" EntityType="Self.INSTI_BANCO" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AddBankAccStoreContainer" CdmEntityContainer="UserBankAcc">
+          <EntitySetMapping Name="EBRX_CONTA">
+            <EntityTypeMapping TypeName="AddBankAcc.EBRX_CONTA">
+              <MappingFragment StoreEntitySet="EBRX_CONTA">
+                <ScalarProperty Name="ACC_INT_ID" ColumnName="ACC_INT_ID" />
+                <ScalarProperty Name="EBRX_CARTEIRA_ID" ColumnName="EBRX_CARTEIRA_ID" />
+                <ScalarProperty Name="EBRX_CLIENT_ID" ColumnName="EBRX_CLIENT_ID" />
+                <ScalarProperty Name="AGC_STR_ACC" ColumnName="AGC_STR_ACC" />
+                <ScalarProperty Name="CONT_NUM_ACC" ColumnName="CONT_NUM_ACC" />
+                <ScalarProperty Name="DIG_STR_ACC" ColumnName="DIG_STR_ACC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INSTI_BANCO">
+            <EntityTypeMapping TypeName="AddBankAcc.INSTI_BANCO">
+              <MappingFragment StoreEntitySet="INSTI_BANCO">
+                <ScalarProperty Name="BANCO_INT_ID" ColumnName="BANCO_INT_ID" />
+                <ScalarProperty Name="NOME_STR_BANK" ColumnName="NOME_STR_BANK" />
+                <ScalarProperty Name="CNPJ_STR_BANK" ColumnName="CNPJ_STR_BANK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>E-BRAX | Online, Simples e Inteligente.</title>
+    <link href="~/Content/css/MainPage/styles.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+ 
+    <div id="">
+        @RenderBody()
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">EBRAX - Brasil</h1>
+            <h2>Endereço</h2>
+
+            <address>
+                Av. Nações Unidas, 2867, São Paulo.<br>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Conheça</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sobre Nós</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Atendimento</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Hardware Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Software Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Digital Signage</a>
+                    </li>
+
+                    <li>
+                        <a href="">Termos de Uso</a>
+                    </li>
+
+
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Contato</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">+55 11 98762-0982</a>
+                    </li>
+
+                    <li>
+                        <a href="#">ebrax@exchange.com</a>
+                    </li>
+
+                    <li>
+                        <a href="#">0800 987</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2020 EBRAX Brasil. Todos os Direitos Reservados.</p>
+
+            <div class="legal__links">
+                <span>De <span class="heart">♥</span> Para o melhor investimento</span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="~/Content/js/JQuery3.3.1.js"></script> <!--JQuery para melhorar a responsividade-->
+    <!--Para melhorar a responsividade-->
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.toggle').toggleClass('active')
+
+                $('nav ul').toggleClass('active-menu')
+
+
+            })
+        });
+
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

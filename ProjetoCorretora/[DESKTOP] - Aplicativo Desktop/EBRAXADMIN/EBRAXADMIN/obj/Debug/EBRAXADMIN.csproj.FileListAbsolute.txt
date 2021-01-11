@@ -1,0 +1,238 @@
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.exe.config
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.exe
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.pdb
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csprojAssemblyReference.cache
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.LoginRegister.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Properties.Resources.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.GenerateResource.cache
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.CoreCompileInputs.cache
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.exe
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.pdb
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Registro.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.ValidarMatricula.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Principal.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EditarMeuRegistro.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EncerrarContaCliente.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EnviarRelatorioCliente.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.AjudaCadastro.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\EnvDTE.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\stdole.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.MSXML.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.GerarRelatoriosConfidenciais.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.RelatorioConfidentialGerado.resources
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\RdlCompile.cache
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\RdlCompile.compiled
+C:\Users\souza\source\repos\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.CopyComplete
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.exe.config
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.exe
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.pdb
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EnvDTE.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\stdole.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.MSXML.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csprojAssemblyReference.cache
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.AjudaCadastro.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EditarMeuRegistro.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EncerrarContaCliente.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EnviarRelatorioCliente.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.GerarRelatoriosConfidenciais.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.LoginRegister.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Principal.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Properties.Resources.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Registro.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.RelatorioConfidentialGerado.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.ValidarMatricula.resources
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.GenerateResource.cache
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\RdlCompile.cache
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\RdlCompile.compiled
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.CoreCompileInputs.cache
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.CopyComplete
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.exe
+C:\Users\souza\Desktop\Entrega PIM\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.pdb
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.exe.config
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.exe
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EBRAXADMIN.pdb
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\EnvDTE.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\stdole.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csprojAssemblyReference.cache
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.AjudaCadastro.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EditarMeuRegistro.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EncerrarContaCliente.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.EnviarRelatorioCliente.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.GerarRelatoriosConfidenciais.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.LoginRegister.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Principal.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Properties.Resources.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.Registro.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.RelatorioConfidentialGerado.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.ValidarMatricula.resources
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.GenerateResource.cache
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.CoreCompileInputs.cache
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.csproj.CopyComplete
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.exe
+C:\Users\Lukas\Desktop\[ banco local ]PIM 4 SEMESTRE\[DESKTOP] - Aplicativo Desktop\EBRAXADMIN\EBRAXADMIN\obj\Debug\EBRAXADMIN.pdb

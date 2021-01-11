@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1c3f1fa53aab4ed9b8d03e0cc07448ee" Name="Diagram1">
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_BANCO_CONTA" Width="1.5" PointX="13" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_CARTEIRA" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_CLIENT_SOLICIT" Width="1.5" PointX="13.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_CLIENTE" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_CONTA" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_EXTRATO_CONTA" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_FUNC_PROFILE" Width="1.5" PointX="11" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_FUNCRH" Width="1.5" PointX="8.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_HIST_COD" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_ORDER" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_TIP_ORDR" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_TIP_TRAN" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.INSTI_BANCO" Width="1.5" PointX="10.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_COTACAO" Width="1.5" PointX="6" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_MOEDA" Width="1.5" PointX="3.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_SOLICT" Width="1.5" PointX="11" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDPIMModel.EBRX_TRAN" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="BDPIMModel.FK_BANC_INST_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_CLIENT_CARTEIRA_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_CONT_CARTEIR_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_MOED_CARTEIR_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_FUNC_ATENDMNT" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_TIP_SOLCT_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_CLIENT_CONT_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_CLIENT_EXTRT_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_CLIENT_ORDR_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_H_CAD_CLIENT" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_ORDR_CLIENT_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_ORDER_EXTRT_COD" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_TRAN_EXTRT_COD" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_RH_FUNC" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_MOED_TRAN_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_TIP_ORDER_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_TIP_TRAN_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_MOED_COT_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BDPIMModel.FK_TRAN_MOED_ID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

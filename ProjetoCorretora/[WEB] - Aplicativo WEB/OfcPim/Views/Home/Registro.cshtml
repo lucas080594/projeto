@@ -1,0 +1,98 @@
+﻿@model OfcPim.Models.EBRX_CLIENTE
+
+@{
+    ViewBag.Title = "Registro";
+    Layout = "~/Views/Shared/_LayoutHeaderFooter.cshtml";
+}
+
+<link href="~/Content/css/Cadastro/Cadastro.css" rel="stylesheet" />
+
+@if (TempData["FailMessage"] == null)
+{
+    <div class="alertMessage" style="border:1px solid green">
+        @TempData["userCriado"]
+    </div>
+}
+ 
+    <div id="main">
+        <div class="conteudo">
+
+
+            <div class="Cadastrar"><h1>Cadastro</h1></div>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <!-- <h4>EBRX_CLIENTE</h4>-->
+                    <hr />
+                    <!-- @Html.ValidationSummary(true, "", new { @class = "text-danger" })-->
+                    <div class="form-group">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        @Html.LabelFor(model => model.NOME_STR_CLI, "Nome:", htmlAttributes: new { @class = "nome" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NOME_STR_CLI, new { htmlAttributes = new { @class = "Nome" } })
+                            @Html.ValidationMessageFor(model => model.NOME_STR_CLI, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CPF_STR_CLI, "CPF:", htmlAttributes: new { @class = "nome" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CPF_STR_CLI, new { htmlAttributes = new { @class = "CPF" } })
+                            @Html.ValidationMessageFor(model => model.CPF_STR_CLI, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DT_NASC_CLI, "Data de nascimento:", htmlAttributes: new { @class = "nome" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DT_NASC_CLI, new { htmlAttributes = new { @class = "Data_de_nascimento" } })
+                            @Html.ValidationMessageFor(model => model.DT_NASC_CLI, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EMAIL_STR_CLI, "E-Mail:", htmlAttributes: new { @class = "nome" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.EMAIL_STR_CLI, new { htmlAttributes = new { @class = "E-Mail" } })
+                            @Html.ValidationMessageFor(model => model.EMAIL_STR_CLI, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SENH_ACC, "Senha:", htmlAttributes: new { @class = "nome" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.SENH_ACC, new { htmlAttributes = new { @class = "Senha" } })
+                            @Html.ValidationMessageFor(model => model.SENH_ACC, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Cadastrar" class="" />
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+    @section Scripts{
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+

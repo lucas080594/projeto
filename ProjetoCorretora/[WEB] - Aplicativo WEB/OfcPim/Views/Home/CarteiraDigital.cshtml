@@ -1,0 +1,60 @@
+﻿@model OfcPim.Models.EBRX_CARTEIRA
+
+@{
+    ViewBag.Title = "CarteiraDigital";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="titulo_page">
+    <h1>Minha Carteira</h1>
+    <h3>Aqui você tem as informações dos seus ativos em dinheiro e criptoativos</h3>
+    <div>
+        <h2>Dados da sua conta</h2>
+    </div>
+</div>
+
+<div class="informacoes-conta">
+
+    <div class="user-information">
+        <div class="titulo-carteira">
+            <h1>Carteira Digital</h1>
+        </div>
+
+        <div class="saldo-bit-eht">
+            <dt>
+                SALDO
+            </dt>
+
+            <dt>
+                ETHER
+            </dt>
+
+            <dt>
+                BITCOIN
+            </dt>
+        </div>
+
+        <div class="valores-moedas">
+            <dt>
+                R$ 1.500
+            </dt>
+
+            <dt>
+                0,002456
+            </dt>
+
+            <dt>
+
+                0,120
+
+            </dt>
+
+        </div>
+    </div>
+
+</div>
+
+@section ScriptPage{
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LoginModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EBRX_CLIENTE">
+    <Key>
+      <PropertyRef Name="CLI_INT_ID" />
+    </Key>
+    <Property Name="CLI_INT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME_STR_CLI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CPF_STR_CLI" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DT_NASC_CLI" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EMAIL_STR_CLI" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DAT_INCLS_CLI" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="STATS_STR_CLI" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DAT_ATUALIZC" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SENH_ACC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="UserAcessEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EBRX_CLIENTE" EntityType="Self.EBRX_CLIENTE" />
+  </EntityContainer>
+</Schema>

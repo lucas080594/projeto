@@ -1,0 +1,75 @@
+﻿@model OfcPim.Models.EBRX_CLIENTE
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="~/Content/css/MainPage/footer.css" rel="stylesheet" />
+    <link href="~/Content/css/DashBoard/Dashstyle.css" rel="stylesheet" />
+    <link href="~/Content/css/DashBoard/MinhaContaStilo/MinhaConta.css" rel="stylesheet" />
+    <link href="~/Content/css/DashBoard/ServicosStilo/telaServi.css" rel="stylesheet" />
+    <link href="~/Content/css/CareteiraDigital/CarteiraDigital.css" rel="stylesheet" />
+    <link href="~/Content/css/DashBoard/btn.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div class="click_collapse">
+        <div class="top_navbar">
+            <div class="logo">EBRAX<span>EXCHANGE</span></div>
+            <div class="menu">
+                <div class="hamburger">
+
+                </div>
+
+                <div class="profile_wrap">
+                    <div class="profile">Bem-Vindo - 
+                        @Session["nomeUsuarioLogado"].ToString()
+
+                        <span class="icon">
+                            <i class="btnLogoff"><a href="Index">Sair</a></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar_inner">
+                <ul>
+
+                    <li>
+
+                            @Html.ActionLink("Carteira", "CarteiraDigital", "Home", new { htmlAttributes = new { @class = "text" } })
+
+                    </li>
+                    <li>
+                            @Html.ActionLink("Serviços", "Service", "Home", new { htmlAttributes = new { @class = "text" } })
+                        
+                    </li>
+
+                    <li>
+
+                            @Html.ActionLink("Minha Conta", "MinhaConta", "Home", new { })
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="titulo-page">
+                @RenderBody()
+        </div>
+    </div>
+
+
+    @RenderSection("ScriptPage", required: true)
+
+</body>
+</html>

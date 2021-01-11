@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LoginModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EBRX_CLIENTE">
+    <Key>
+      <PropertyRef Name="CLI_INT_ID" />
+    </Key>
+    <Property Name="CLI_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME_STR_CLI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CPF_STR_CLI" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="DT_NASC_CLI" Type="date" Nullable="false" />
+    <Property Name="EMAIL_STR_CLI" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DAT_INCLS_CLI" Type="datetime" Nullable="false" />
+    <Property Name="STATS_STR_CLI" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DAT_ATUALIZC" Type="datetime" Nullable="false" />
+    <Property Name="SENH_ACC" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityContainer Name="LoginModelStoreContainer">
+    <EntitySet Name="EBRX_CLIENTE" EntityType="Self.EBRX_CLIENTE" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

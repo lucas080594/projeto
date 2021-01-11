@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BankAccountModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EBRX_BANCO_CONTA">
+    <Key>
+      <PropertyRef Name="COD_INT_CONTA_ID" />
+    </Key>
+    <Property Name="COD_INT_CONTA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EBRX_CLIENTE_CLI_COD" Type="int" Nullable="false" />
+    <Property Name="INSTI_BANCO_COD" Type="int" Nullable="false" />
+    <Property Name="CONT_STR_BANCO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="DIGT_STR_BANCO" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AGENC_NUMERO" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="INSTI_BANCO">
+    <Key>
+      <PropertyRef Name="BANCO_INT_ID" />
+    </Key>
+    <Property Name="BANCO_INT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME_STR_BANK" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="CNPJ_STR_BANK" Type="char" MaxLength="14" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_BANC_INST_ID">
+    <End Role="INSTI_BANCO" Type="Self.INSTI_BANCO" Multiplicity="1" />
+    <End Role="EBRX_BANCO_CONTA" Type="Self.EBRX_BANCO_CONTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INSTI_BANCO">
+        <PropertyRef Name="BANCO_INT_ID" />
+      </Principal>
+      <Dependent Role="EBRX_BANCO_CONTA">
+        <PropertyRef Name="INSTI_BANCO_COD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BankAccountModelStoreContainer">
+    <EntitySet Name="EBRX_BANCO_CONTA" EntityType="Self.EBRX_BANCO_CONTA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INSTI_BANCO" EntityType="Self.INSTI_BANCO" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BANC_INST_ID" Association="Self.FK_BANC_INST_ID">
+      <End Role="INSTI_BANCO" EntitySet="INSTI_BANCO" />
+      <End Role="EBRX_BANCO_CONTA" EntitySet="EBRX_BANCO_CONTA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
